@@ -1,0 +1,18 @@
+<nav>
+    <div class="nav-wrapper grey darken-4">
+      <a href="#" class="brand-logo deep-orange darken-4"  >
+        <img src ="https://c.ekstatic.net/ecl/logos/emirates/emirates-logo-badge.svg?h=d-52wmsnqryhi7L83BAKpg" width="180" height="61">
+      </a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+         <!-- Sesion -->
+      <li *ngIf="!activeSession"><a routerLink="/seguridad/login">Login</a></li>
+      <li *ngIf="!activeSession"><a routerLink="/admin/create">Registrarse</a></li>
+      <li *ngIf="activeSession"><a routerLink="/seguridad/logout">Cerrar Sesion</a></li>
+      <li *ngIf="activeSession" ><a routerLink="/admin/get">Usuarios</a></li>
+      <li *ngIf="activeSession"><a routerLink="/vuelos/get">Vuelos</a></li>
+      <li *ngIf="activeSession"><a routerLink="/aeropuertos/get">Aeropuertos</a></li>
+      <li *ngIf="activeSession"><a routerLink="/rutas/get">Rutas</a></li>
+      </ul>
+     
+    </div>
+  </nav>
